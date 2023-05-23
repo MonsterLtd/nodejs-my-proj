@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <h2>Hello World!</h2>
+        <h2>U+1FAE3</h2>
       </body>
     </html>
   `;
