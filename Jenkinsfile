@@ -33,6 +33,7 @@ pipeline {
         }
         stage('Deploy') {
            steps {
+                sh 'pkill node'
                 sh 'npm install -g forever'
                 sh 'forever start src/index.js'
            }
