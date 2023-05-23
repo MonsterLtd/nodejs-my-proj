@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Docker login') {
             steps {
-                sh 'j+Fb4DmH#-JH*6@'
+                sh 'docker login -u $DOCKERHUB_CREDENTIALS -p $DOCKERHUB_CREDENTIALS' //'j+Fb4DmH#-JH*6@'
             }
         }
         stage('Test') {
