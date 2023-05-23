@@ -1,7 +1,7 @@
 pipeline {
 
     agent {
-        label 'my-agent'
+        label 'my-new-agent'
     }
 
     tools {
