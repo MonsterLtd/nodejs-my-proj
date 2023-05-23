@@ -9,7 +9,14 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
+
+        stage('Clean') {
+            steps {
+                cleanWs()
+            }
+        }
+
+        stage('Clone_Repo') {
             steps {
                 git branch: 'main', url: 'https://github.com/MonsterLtd/nodejs-my-proj.git'
             }
@@ -30,11 +37,5 @@ pipeline {
                 sh 'forever start src/index.js'
            }
         }
-    }
-
-    post {
-      always {
-         cleanWs()
-      }
     }
 }
