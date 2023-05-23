@@ -15,7 +15,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('my_dockerhub_creds')
-        IMAGE_NAME = nadiad/mynodejsapp
+        IMAGE_NAME = 'nadiad/mynodejsapp'
     }
 
     stages {
