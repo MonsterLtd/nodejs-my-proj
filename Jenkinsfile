@@ -1,7 +1,7 @@
 pipeline {
 
     agent {
-        label 'openssh-agent'
+        label 'my-new-agent'
     }
 
     tools {
